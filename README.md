@@ -6,10 +6,9 @@ A负责的最小统一底座。
 
 ```powershell
 cd backend
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-Copy-Item .env.example .env
+conda activate "自己的环境名字"
+conda env create -f environment.yml              #第一次运行配环境
+.env.example 复制后缀改为.env  里面写自己的api
 uvicorn app.main:app --reload --port 8000
 ```
 
