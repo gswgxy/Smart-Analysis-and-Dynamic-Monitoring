@@ -1,6 +1,9 @@
-name: goodname
+name: ProgramDevelopment
 channels:
-  - defaults
+  - conda-forge
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
 dependencies:
   - aiodns=4.0.4=py313haa95532_0
   - aiohttp=3.14.3=py313h1c6eee0_0
@@ -96,7 +99,7 @@ dependencies:
       - durationpy==0.11
       - email-validator==2.3.0
       - emoji==2.16.0
-      - en-core-web-sm==3.8.0
+      - https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
       - et-xmlfile==2.0.0
       - exceptiongroup==1.3.1
       - executing==2.2.1
@@ -340,3 +343,4 @@ dependencies:
       - xxhash==4.0.1
       - yarl==1.25.1
       - zstandard==0.25.0
+prefix: D:\anaconda\envs\langchain1.2
