@@ -1,6 +1,6 @@
 # app/tools.py
 from langchain.tools import tool
-from app.services.search_service import search_service
+from app.services.search_service import net_search
 from app.services.kg_service import kg_service
 from app.services.sql_service import sql_service
 from app.services.rag_service import rag_service
@@ -8,7 +8,7 @@ from app.services.rag_service import rag_service
 @tool
 def web_search(query: str) -> str:
     """联网搜索最新信息。"""
-    return search_service.format_for_llm(query)
+    return net_search(query)
 
 @tool
 def kg_query(entity: str, depth: int = 2) -> str:
